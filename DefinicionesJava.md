@@ -22,6 +22,40 @@ public class Persona {
 
 ## - ENCAPSULACION
 
+### ¿Qué es el encapsulamiento?
+En programación modular, y más específicamente en programación orientada a objetos, se denomina encapsulamiento al ocultamiento del estado, es decir, de los datos miembro de un objeto de manera que solo se pueda cambiar mediante las operaciones definidas para ese objeto.
+Cada objeto está aislado del exterior, es un módulo natural, y la aplicación entera se reduce a un agregado o rompecabezas de objetos. El aislamiento protege a los datos asociados de un objeto contra su modificación por quien no tenga derecho a acceder a ellos, eliminando efectos secundarios e interacciones.
+De esta forma el usuario de la clase puede obviar la implementación de los métodos y propiedades para concentrarse solo en cómo usarlos. Por otro lado se evita que el usuario pueda cambiar su estado de maneras imprevistas e incontroladas.
+
+En resumen podemos decir que el encapsulamiento es la manera en que los datos de la aplicación quedan aislados y solo se puede acceder a ellos usando pautas concretas, que son los metodos que se han creado concretamente para ello, de esta manera nos evitamos modificaciones involuntarias evitando así problemas una vez se este usando la aplicación. Ejemplo:
+
+```java
+public class Persona {
+  
+  private String dni = "92921933X"
+  private String nombre = "Pepe"
+  private String apellidos = "Castro Garcia"
+  private double altura = "1.85"
+  private double peso = "85.3"
+  private String colorPiel = "Negro"
+  
+  
+  // EJEMPLO DE ENCAPSULACION QUE OBLIGA A USAR ESTOS METODOS SI SE QUIEREN CAMBIAR LOS PARAMETROS DE ESTA PERSONA
+  // ***EN CONCRETO METODOS PARA LEER SU NOMBRE, O MODIFICARLO
+  
+  public String getNombre(){
+    return this.nombre;
+  }
+  
+  public void setNombre(String nuevoNombre){
+    this.nombre = nuevoNombre
+  }
+}
+
+```
+
+
+
 ## - INSTALACION E INICIALIZACION DE OBJETOS
 
 ## - SOBRECARGA DE METODOS
