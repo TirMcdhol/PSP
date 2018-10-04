@@ -54,9 +54,23 @@ public class Persona {
 
 ```
 
+## - DECLARACION E INICIALIZACION DE VARIABLES
 
+### ¿Qué es declarar una variable?
+Para tener una variable en un programa, previamente hay que definirla con un tipo y un identificador (es decir, un nombre para la variable).Y seguidamente hay que añadir un punto y coma a la expresión.
+El punto y coma transforma la expresión en una instrucción que se ejecutará en el programa. Cuando se llegue a ella, el programa reservará espacio de memoria según el tipo de variable para poder escribir y leer valores. Por lo tanto, la fórmula general es:
+### <tipo> <identificador> <;>
+Es lo que llamamos una declaración de variable. Todas las variables se deben declarar antes de su uso. Si no, se producirá un error de compilación. Ejemplo:
 
-## - INSTALACION E INICIALIZACION DE OBJETOS
+```java
+
+//Declaramos 2 variables, una de tipo texto donde se guardara el nombre, y otra de tipo entero donde se guardara la edad
+
+String nombre;
+int edad;
+
+```
+
 
 ## - SOBRECARGA DE METODOS
 
