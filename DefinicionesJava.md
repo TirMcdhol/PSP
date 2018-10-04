@@ -64,13 +64,29 @@ Es lo que llamamos una declaración de variable. Todas las variables se deben de
 
 ```java
 
-//Declaramos 2 variables, una de tipo texto donde se guardara el nombre, y otra de tipo entero donde se guardara la edad
+//Declaramos 2 variables, una de tipo texto donde se guardara el nombre
+//y otra de tipo entero donde se guardara la edad
 
 String nombre;
 int edad;
 
 ```
 
+### ¿Qué es inicializar una variable?
+Una variable que ha sido solo declarada no posee contenido, y por tanto su valor será NULL(nulo) por defecto o en caso de variables
+numéricas suelen tener valores por defecto como -1. Para poder trabajar con una variable en un programa, llegara el momento en que
+deberemos inicializarla dandole un valor, el cual no tiene porque ser el mismo a lo largo del funcionamiento de un programa sino que
+puede ir variando.
+
+```java
+
+//En este caso incializamos las dos variables declaradas anteriormente y les damos unos valores a cada una
+//el nombre será Maria Jose y la edad seran 28 años
+
+String nombre = "Maria Jose";
+int edad = 28;
+
+```
 
 ## - SOBRECARGA DE METODOS
 
