@@ -113,6 +113,26 @@ public class Persona{
 
 ## - HERENCIA
 
+### ¿Qué es la sobrecarga de un metodo?
+La herencia es un mecanismo que permite la definición de una clase a partir de la definición de otra ya existente. La herencia permite compartir automáticamente métodos y datos entre clases, subclases y objetos. 
+La herencia está fuertemente ligada a la reutilización del código en la OOP. Esto es, el código de cualquiera de las clases puede ser utilizado sin más que crear una clase derivada de ella, o bien una subclase. 
+Hay dos tipos de herencia: Herencia Simple y Herencia Múltiple. La primera indica que se pueden definir nuevas clases solamente a partir de una clase inicial mientras que la segunda indica que se pueden definir nuevas clases a partir de dos o más clases iniciales. Java sólo permite herencia simple. 
+
+Podemos decir que el concepto herencia es que al ya tener unas clases hechas, las nuevas absorven de estas su información y metodos si estan relacionadas. Por ejemplo ya tenemos la clase Persona hecha hasta el momento, si quiesieramos hacer una clase niño, no nos haria falta definirla de nuevo, podemos decir que extiende (extends) de persona, porque los parametros que pueda tener un nño van a ser los mismos que una persona. Ejemplo:
+
+```java
+
+public class Niño extends Persona{
+
+   private String colegio;      //Esta clase Niño tendra estos 2 nuevos atributos (Colegio y curso) ademas de todos aquellos que tiene 
+   private String curso;        // la clase Persona (Nombre,Edad,Peso,Altura,........) ya que hereda (extends) de ella.
+   
+   public void Niño(String colegio, String curso){
+      this.colegio = colegio;
+      this.curso  = curso;
+   }
+}
+```
 ## - POLIFORMISMO
 
 ## - INTERFACES
