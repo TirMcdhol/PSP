@@ -1,4 +1,4 @@
-´´´java
+```java
 
 public class ValidarDNI {
 
@@ -32,4 +32,4 @@ public class ValidarDNI {
 	
 }
 
-´´´
+```
