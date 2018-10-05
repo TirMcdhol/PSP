@@ -90,6 +90,27 @@ int edad = 28;
 
 ## - SOBRECARGA DE METODOS
 
+### ¿Qué es la sobrecarga de un metodo?
+Sobrecarga es la capacidad de un lenguaje de programación, que permite nombrar con el mismo identificador diferentes variables u operaciones.
+En programación orientada a objetos la sobrecarga se refiere a la posibilidad de tener dos o más funciones con el mismo nombre pero funcionalidad diferente. Es decir, dos o más funciones con el mismo nombre realizan acciones diferentes. El compilador usará una u otra dependiendo de los parámetros usados. A esto se llama también sobrecarga de funciones.
+También existe la sobrecarga de operadores que al igual que con la sobrecarga de funciones se le da más de una implementación a un operador. El mismo método dentro de una clase permite hacer cosas distintas en función de los parámetros.
+Java no permite al programador implementar sus propios operadores sobrecargados, pero sí utilizar los predefinidos como el +. C++, por el contrario si permite hacerlo. Ejemplo:
+
+```java
+
+public class Persona{
+
+   private String nombre;
+   
+   public void setNombre() {                      //Este metodo pone por defecto el nombre de Pedro cuando se usa.
+        this.nombre = "Pedro";
+   }
+   public void setNombre(Stringt nuevoNombre) {   //Este metodo nos permite modificar el nombre introduciendo nosotros el nuevo
+        this.nombre = nuevoNombre;
+   }
+}
+```
+
 ## - HERENCIA
 
 ## - POLIFORMISMO
