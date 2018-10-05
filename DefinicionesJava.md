@@ -152,7 +152,7 @@ public class Main {
     	persona[1]  = new Niño;
    	persona[2]  = new Adulto;
 	}
-```java
+```
 
 ## - INTERFACES
 
