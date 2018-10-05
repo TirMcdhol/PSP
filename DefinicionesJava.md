@@ -113,7 +113,7 @@ public class Persona{
 
 ## - HERENCIA
 
-### ¿Qué es la sobrecarga de un metodo?
+### ¿Qué es la herencia?
 La herencia es un mecanismo que permite la definición de una clase a partir de la definición de otra ya existente. La herencia permite compartir automáticamente métodos y datos entre clases, subclases y objetos. 
 La herencia está fuertemente ligada a la reutilización del código en la OOP. Esto es, el código de cualquiera de las clases puede ser utilizado sin más que crear una clase derivada de ella, o bien una subclase. 
 Hay dos tipos de herencia: Herencia Simple y Herencia Múltiple. La primera indica que se pueden definir nuevas clases solamente a partir de una clase inicial mientras que la segunda indica que se pueden definir nuevas clases a partir de dos o más clases iniciales. Java sólo permite herencia simple. 
@@ -134,5 +134,24 @@ public class Niño extends Persona{
 }
 ```
 ## - POLIFORMISMO
+
+### ¿Qué es el poliformismo?
+Polimorfismo es la capacidad de un objeto de adquirir varias formas. El uso más común de polimorfismo en programación orientada a objetos se da cuando se utiliza la referencia de una clase padre, para referirse al objeto de la clase hijo.
+
+Cualquier objeto java que pueda pasar más de un test "ES-UN" es considerado polimórfico. En Java, todos los objetos son polimórficos ya que cualquier objeto pasaría un test "ES-UN" dado que son de su propio tipo, además del de la clase Object.
+
+Siguiendo con los ejemplos anteriores dados hasta ahora, podemos decir que Niño es una clase polimorfica debido a que, hereda de la clase Persona, y aunque sea un Niño tambien es una Persona al mismo tiempo. Por lo cual podriamos decir que un niño es una Persona pero no todas las Personas son niños. Lo cual para entenderlo mejor es la posibilidad de crear una nueva clase llamada Adulto que heradara de Persona, tanto Niño como Adulto son Personas.
+
+```java
+
+public class Main {
+	public static void main(String[] args) {
+		
+    Persona[] personas = new Persona[10];        //Dentro de este Array de Personas hay tanto Niños como Adultos
+		personas[0] = new Niño;
+    persona[1]  = new Niño;
+    persona[2]  = new Adulto;
+	}
+```java
 
 ## - INTERFACES
