@@ -148,10 +148,86 @@ public class Main {
 	public static void main(String[] args) {
 		
     Persona[] personas = new Persona[10];        //Dentro de este Array de Personas hay tanto Niños como Adultos
-		personas[0] = new Niño;
-    persona[1]  = new Niño;
-    persona[2]  = new Adulto;
+	personas[0] = new Niño;
+    	persona[1]  = new Niño;
+   	persona[2]  = new Adulto;
 	}
 ```java
 
 ## - INTERFACES
+
+### ¿Qué es una interfaz?
+Interfaz es un término que procede del vocablo inglés interface. En informática, esta noción sirve para señalar a la conexión que se da de manera física y a nivel de utilidad entre dispositivos o sistemas.
+La interfaz, por lo tanto, es una conexión entre dos máquinas de cualquier tipo, a las cuales les brinda un soporte para la comunicación a diferentes estratos. Es posible entender la interfaz como un espacio (el lugar donde se desarrolla la interacción y el intercambio), instrumento (a modo de extensión del cuerpo humano, como el mouse que permite interactuar con una computadora) o superficie (el objeto que aporta información a través de su textura, forma o color).
+Se conoce como interfaz de usuario al medio que permite a una persona comunicarse con una máquina. La interfaz, en este caso, está compuesta por los puntos de contacto entre un usuario y el equipo. Además del mencionado ejemplo del mouse, otra interfaz de este tipo es la pantalla del monitor o el teclado.
+
+En java, es posible crear una interfaz usando el Swing y sus elementos, los cuales permiten al usuario visualizar e interactuar con el programa a través de esta interfaz visual. Ejemplo:
+
+```java
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+/**
+ * Clase Ventana
+ * Muestra la estructuta que deberia tener una Ventana en Java con la libreria
+ * Swing, contiene una etiqueta, un caja de texto y un boton, que tiene la
+ * accion de mostrar el texto en la caja por una ventana de mensaje.
+ * @author Daniel Alvarez (a3dany)
+ */
+public class Ventana extends JFrame implements ActionListener {
+
+    private JLabel texto;           // etiqueta o texto no editable
+    private JTextField caja;        // caja de texto, para insertar datos
+    private JButton boton;          // boton con una determinada accion
+
+    public Ventana() {
+        super();                    // usamos el contructor de la clase padre JFrame
+        configurarVentana();        // configuramos la ventana
+        inicializarComponentes();   // inicializamos los atributos o componentes
+    }
+
+    private void configurarVentana() {
+        this.setTitle("Esta Es Una Ventana");                   // colocamos titulo a la ventana
+        this.setSize(310, 210);                                 // colocamos tamanio a la ventana (ancho, alto)
+        this.setLocationRelativeTo(null);                       // centramos la ventana en la pantalla
+        this.setLayout(null);                                   // no usamos ningun layout, solo asi podremos dar posiciones a los componentes
+        this.setResizable(false);                               // hacemos que la ventana no sea redimiensionable
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    // hacemos que cuando se cierre la ventana termina todo proceso
+    }
+
+    private void inicializarComponentes() {
+        // creamos los componentes
+        texto = new JLabel();
+        caja = new JTextField();
+        boton = new JButton();
+        // configuramos los componentes
+        texto.setText("Inserte Nombre");    // colocamos un texto a la etiqueta
+        texto.setBounds(50, 50, 100, 25);   // colocamos posicion y tamanio al texto (x, y, ancho, alto)
+        caja.setBounds(150, 50, 100, 25);   // colocamos posicion y tamanio a la caja (x, y, ancho, alto)
+        boton.setText("Mostrar Mensaje");   // colocamos un texto al boton
+        boton.setBounds(50, 100, 200, 30);  // colocamos posicion y tamanio al boton (x, y, ancho, alto)
+        boton.addActionListener(this);      // hacemos que el boton tenga una accion y esa accion estara en esta clase
+        // adicionamos los componentes a la ventana
+        this.add(texto);
+        this.add(caja);
+        this.add(boton);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String nombre = caja.getText();                                 // obtenemos el contenido de la caja de texto
+        JOptionPane.showMessageDialog(this, "Hola " + nombre + ".");    // mostramos un mensaje (frame, mensaje)
+    }
+
+    public static void main(String[] args) {
+        Ventana V = new Ventana();      // creamos una ventana
+        V.setVisible(true);             // hacemos visible la ventana creada
+    }
+}
+```java
