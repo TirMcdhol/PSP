@@ -230,4 +230,4 @@ public class Ventana extends JFrame implements ActionListener {
         V.setVisible(true);             // hacemos visible la ventana creada
     }
 }
-```java
+```
