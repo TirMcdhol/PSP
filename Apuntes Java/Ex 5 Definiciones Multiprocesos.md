@@ -72,13 +72,14 @@ Hace referencia a las técnicas de programación que son utilizadas para expresa
 - En programas con pocas instrucciones en mas lento
 - Si se aplica mal puede llevar a resultados erroneos.
 
-### Un programa es concurrente si puede soportar dos o más acciones en progreso.
+### "Un programa es concurrente si puede soportar dos o más acciones en progreso.
 
 ### Un programa es paralelo si puede soportar dos o más acciones ejecutándose simultáneamente."
 
 ## PROGRAMACIÓN PARALELA
 
 ### ¿Qué es la programación paralela?
+
 
 
 
