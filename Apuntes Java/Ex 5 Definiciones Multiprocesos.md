@@ -24,7 +24,8 @@ Otros ejemplos de programas de aplicación pueden ser: programas de comunicació
 
 ### ¿Qué es un servicio? ¿Qué es un proceso? ¿Cuales son las diferencias entre ambos?
 
-Su descripción rápida sería que un servicio no es más que programa o aplicación en ejecución en segundo plano, algo con lo que a nivel de usuarios no deberemos interacturar pero que es totalmente necesario para el funcionamiento del sistema, algo que está ahí trabajando pero que no percibimos.
+### Su descripción rápida sería que un servicio no es más que programa o aplicación en ejecución en segundo plano, 
+algo con lo que a nivel de usuarios no deberemos interacturar pero que es totalmente necesario para el funcionamiento del sistema, algo que está ahí trabajando pero que no percibimos.
 
 A diferencia de los procesos, los servicios no se pueden cerrar o eliminar, lo único que podemos hacer es detenerlos o reiniciarlos, pero en ningún caso “matarlos”.
 
@@ -32,5 +33,6 @@ Por poner un ejemplo de servicios con los que cuenta Windows, los cuales están 
 
 Estos ejemplos que indicamos al final no son más que aplicaciones que pueden estar en ejecución o no, pero son aplicaciones destinadas al funcionamiento del sistema operativo y no al manejo de un usuario, por ejemplo, cuando nuestro sistema operativo detecta una conexión de red y tenemos la red configurada en modo automático, el equipo lanzará una solicitud de asignación de IP a través de la red hasta encontrar el servidor de DHCP que se la proporcione, pues bien, toda la tarea e intercambio de información lo está realizando el servicio de DHCP de Windows, que al final no será más que una aplicación que se ejecutará en un momento dado.
 
-Podríamos decir que un proceso es una aplicación con la que podremos trabajar de forma consciente y sobre la que tendremos el control, mientras que un servicio es una aplicación con la que trabajará el propio sistema operativo y sobre la que no tenemos más control que únicamente detenerla o ponerla en ejecución, los procesos los percibimos y trabajamos con ellos a diario, mientras que los servicios están en la sombra trabajando para el correcto funcionamiento de Windows.
+### Podríamos decir que un proceso es una aplicación con la que podemos trabajar conscientemente y sobre la que tendremos el control,
+mientras que un servicio es una aplicación con la que trabajará el propio sistema operativo y sobre la que no tenemos más control que únicamente detenerla o ponerla en ejecución, los procesos los percibimos y trabajamos con ellos a diario, mientras que los servicios están en la sombra trabajando para el correcto funcionamiento de Windows.
 
