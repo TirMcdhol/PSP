@@ -36,3 +36,11 @@ Estos ejemplos que indicamos al final no son más que aplicaciones que pueden es
 ### Podríamos decir que un proceso es una aplicación con la que podemos trabajar conscientemente y sobre la que tendremos el control,
 mientras que un servicio es una aplicación con la que trabajará el propio sistema operativo y sobre la que no tenemos más control que únicamente detenerla o ponerla en ejecución, los procesos los percibimos y trabajamos con ellos a diario, mientras que los servicios están en la sombra trabajando para el correcto funcionamiento de Windows.
 
+## HILO
+
+### ¿Qué es un hilo de ejecución?
+
+También llamado hebra, proceso ligero, flujo, subproceso o “thread”. Es programa en ejecución que comparte la imagen de memoria y otros
+recursos del proceso con otros hilos. Desde el punto de vista de programación: Función cuya ejecución se puede lanzar en paralelo con otras. Un proceso puede contener uno o más hilos.
+
+
