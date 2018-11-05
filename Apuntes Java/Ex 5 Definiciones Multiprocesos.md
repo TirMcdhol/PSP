@@ -111,6 +111,8 @@ Se emplea un mecanismo global de control/coordinación
 - Múltiples procesos se encuentran en condición de carrera si el resultado de los mismos depende del orden de su llegada
 - Si los procesos que están en condición de carrera no son correctamente sincronizados, puede producirse una corrupción de datos
 
+... Fuente http://ferestrepoca.github.io/paradigmas-de-programacion/paralela/paralela_teoria/index.html
+
 ## PROGRAMACIÓN DISTRIBUIDA
 
 ### ¿Qué es la programación distribuida?
