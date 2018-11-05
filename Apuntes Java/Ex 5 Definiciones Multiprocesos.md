@@ -43,4 +43,34 @@ mientras que un servicio es una aplicación con la que trabajará el propio sist
 También llamado hebra, proceso ligero, flujo, subproceso o “thread”. Es programa en ejecución que comparte la imagen de memoria y otros
 recursos del proceso con otros hilos. Desde el punto de vista de programación: Función cuya ejecución se puede lanzar en paralelo con otras. Un proceso puede contener uno o más hilos.
 
+Esto le da al procesador un grado mayor de flexibilidad en la forma en que administra las tareas. Los hilos son las unidades de instrucciones de procesamiento más pequeñas que el sistema operativo le da al procesador. Usar múltiples hilos para correr un solo programa es más eficiente pues el programa en cuestión puede llevar a cabo múltiples tareas al mismo tiempo.
+
+Objetivo:
+Los procesos son divididos en hilos. Un solo programa puede estar conformado por uno o más procesos que, a su vez, se dividen en hilos. Los hilos de un proceso comparten comandos y código y acceden a los recursos del sistema de forma simultánea para completar sus tareas más rápidamente.
+
+## PROGRAMACIÓN CONCURRENTE
+
+### ¿Qué es la programación concurrente?
+
+Hace referencia a las técnicas de programación que son utilizadas para expresar la concurrencia entre tareas y solución de los problemas de comunicación y sincronización entre procesos. La programación concurrente es la ejecución simultánea de múltiples tareas interactivamente. Estas tareas pueden ser un conjunto de procesos o hilos de ejecución creados por un único programa. Las tareas se pueden ejecutar en una sola CPU (multiprogramación), en varios procesadores, o en una red de computadores distribuidos.
+
+### Ventajas
+
+- Permite optimizar el uso de recursos en sistemas mono/multiprocesador.
+- Fiable administración de los datos en sistemas con gran información
+- Mejor aprovechamiento de la CPU
+- Permite el desarrollo de aplicaciones que no se vean afectadas en tiempo real
+- Permite compartir recursos entre tareas lentas y tareas rápidas para que las tareas lentas no retrasen mucho a las rápidas.
+- Velocidad de ejecución.
+- Menores tiempos de respuesta.
+
+### Desventajas
+
+- Consumos de recursos cuando hay excesos de hilos o procesos
+- Dificultad de desarrollo.
+- Dificultad de verificación.
+- En programas con pocas instrucciones en mas lento
+- Si se aplica mal puede llevar a resultados erroneos.
+
+
 
