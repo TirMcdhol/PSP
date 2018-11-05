@@ -1,1 +1,6 @@
+### DEFINICIONES Y EJEMPLOS DE MULTIPROCESOS
+
+## APLICACIÓN
+
+### ¿Qué es una aplicación?
 
