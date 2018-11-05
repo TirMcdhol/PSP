@@ -80,6 +80,38 @@ Hace referencia a las técnicas de programación que son utilizadas para expresa
 
 ### ¿Qué es la programación paralela?
 
+La computación paralela es el uso de múltiples recursos computacionales para resolver un problema. Se distingue de la computación secuencial en que varias operaciones pueden ocurrir simultáneamente.
 
+En el sentido más simple, la computación paralela es el uso simultáneo de múltiples recursos computacionales para resolver un problema computacional:
 
+Un problema se divide en partes discretas que se pueden resolver simultáneamente
+Cada parte se descompone en una serie de instrucciones
+Las instrucciones de cada parte se ejecutan simultáneamente en diferentes procesadores
+Se emplea un mecanismo global de control/coordinación
+
+### Ventajas
+
+- Resuelve problemas que no se podrían realizar en una sola CPU
+- Resuelve problemas que no se pueden resolver en un tiempo razonable
+- Permite ejecutar problemas de un orden y complejidad mayor
+- Permite ejecutar código de manera más rápida (aceleración)
+- Permite ejecutar en general más problemas
+- Obtención de resultados en menos tiempo
+- Permite la ejecución de varias instrucciones en simultáneo
+- Permite dividir una tarea en partes independientes
+
+### Desventajas
+
+- Mayor consumo de energía
+- Mayor dificultad a la hora de escribir programas
+- Dificultad para lograr una buena sincronización y comunicación entre las tareas
+- Retardos ocasionados por comunicación ente tareas
+- Número de componentes usados es directamente proporcional a los fallos potenciales
+- Condiciones de carrera
+- Múltiples procesos se encuentran en condición de carrera si el resultado de los mismos depende del orden de su llegada
+- Si los procesos que están en condición de carrera no son correctamente sincronizados, puede producirse una corrupción de datos
+
+## PROGRAMACIÓN DISTRIBUIDA
+
+### ¿Qué es la programación distribuida?
 
