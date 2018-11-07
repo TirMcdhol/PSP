@@ -117,3 +117,21 @@ Se emplea un mecanismo global de control/coordinación
 
 ### ¿Qué es la programación distribuida?
 
+La programación distribuida es un paradigma de programación enfocado en desarrollar sistemas distribuidos, abiertos, escalables, transparentes y tolerantes a fallos. Este paradigma es el resultado natural del uso de las computadoras y las redes.
+
+Casi cualquier lenguaje de programación que tenga acceso al máximo al hardware del sistema puede manejar la programación distribuida, considerando una buena cantidad de tiempo y código.
+
+La programación distribuida típicamente cae en alguna de las varias arquitecturas básicas o arquitecturas: cliente-servidor, 3-tier, n-tier, objetos distribuidos, entre otras además de ser base para la pragmaticidad. Los lenguajes específicamente diseñados para programación distribuida son: Ada, Alef, E, Erlang, Limbo y Oz.
+
+### Las aplicaciones distribuidas independientemente  de su arquitectura, comparten ciertas caracteristicas como son:
+
+- Concurrencia, todas las aplicaciones distribuidas son utilizadas por varios usuarios concurrentemente, es decir las transacciones, el uso de los equipos, los bloqueos a recursos, son factores determinantes para diseñar la arquitectura de manera eficiente.
+
+- Topologia de red, aunque los anchos de banda cada vez son mas amplios, se debe tener en cuenta eel tipo de red (LAN o WAN), y si la aplicacion debe ser accesible a traves de Internet, determinando la distribucion de sus procesos, teniendo presente el tipo de red que soportara el trafico de datos.
+
+- Ubicacion de la logica, hay que tener presente que las aplicaciones distribuidad intervienen varios procesos, por lo que es necesario decidir en cual de los posibles procesos fisicos se situa cada componente logico de la aplicacion.
+
+- Homogeneidad de las plataformas, en las aplicaciones distribuidas los sistemas operativos o los lenguajes de programacion utilizados son factores a tener en cuenta, a la hora de decidir el modo de transferencia de datos entre procesos, donde la utilizacion de los estandares son muy utiles en el desarrollo de las aplicaciones.
+
+- Seguridad, mantener los procesos de una forma u otra, conlleva al aumento de la vulnerabilidad de las aplicaciones distribuidas, es importante establecer politicas de seguirdad que impida en acceso no autorizado a los procesos, buen diseño de la infraestructura de red, ajuste de los requerimientos, etc.
+
