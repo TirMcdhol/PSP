@@ -4,7 +4,7 @@
 
 ### Con este programa usamos ProcessBuilder para abrir el Google Chrome
 
-```
+``` java
 public class Uno {
 
 	public static void main (String[] args) {
@@ -23,7 +23,7 @@ public class Uno {
 
 ### Con este programa ejecutamos en el cmd el comando tasklist y hacemos que se muestre el resultado en la consola de Eclipse
 
-```
+``` java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -60,7 +60,7 @@ public class Dos {
 
 ### Con este programa lanzamos un proceso que abrira nuestro lector de pdf escogido
 
-```
+``` java
 public class Tres {
 
 	public static void main(String[] args) {
@@ -77,7 +77,7 @@ public class Tres {
 
 ### Con este programa haciendo uso del runtime, lanzamos un proceso que nos habra una hoja de calculo que le digamos
 
-```
+``` java
 import java.io.IOException;
 
 public class Cuatro {
@@ -100,7 +100,7 @@ public class Cuatro {
 
 ### En este programa ejecutamos la cmd para que muestre la version actual del JDK instalado en el ordenador y que el resultado se muestre en la consola de Eclipse usando un BufferReader
 
-```
+``` java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
