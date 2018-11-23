@@ -1,3 +1,7 @@
+# HERENCIA EN JAVA
+
+## Este ejercicio nos muestra como funciona la herencia en Java, mostrandonos varias clases que heredan de otras.
+
 ```j
 
 public class MainHerencia_EX3 {
