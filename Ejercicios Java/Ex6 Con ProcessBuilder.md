@@ -98,8 +98,7 @@ public class Cuatro {
 }
 ```
 
-### En este programa ejecutamos la cmd para que muestre la version actual del JDK instalado en el ordenador y que el 
-### resultado se muestre en la consola de Eclipse usando un BufferReader
+### En este programa ejecutamos la cmd para que muestre la version actual del JDK instalado en el ordenador y que el resultado se muestre en la consola de Eclipse usando un BufferReader
 
 ```
 import java.io.BufferedReader;
