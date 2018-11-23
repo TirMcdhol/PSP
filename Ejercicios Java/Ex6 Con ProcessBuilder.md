@@ -1,8 +1,8 @@
 # EJERCICIOS CON PROCESSBUILDER EN JAVA
 
 ## ProcessBuilder nos sirve para poder lanzar procesos a través de java, con ello podemos abrir aplicacionies predeterminadas
-documentos de texto, excel o incluso acceder a la consola de windows / linux y ejecutar los comandos que queramos mientras 
-por la consola de Eclipse se nos muestran los resultados.
+## documentos de texto, excel o incluso acceder a la consola de windows / linux y ejecutar los comandos que queramos mientras 
+## por la consola de Eclipse se nos muestran los resultados.
 
 ### Con este programa usamos ProcessBuilder para abrir el Google Chrome
 
@@ -101,7 +101,7 @@ public class Cuatro {
 ```
 
 ### En este programa ejecutamos la cmd para que muestre la version actual del JDK instalado en el ordenador y que el 
-resultado se muestre en la consola de Eclipse usando un BufferReader
+### resultado se muestre en la consola de Eclipse usando un BufferReader
 
 ```
 import java.io.BufferedReader;
