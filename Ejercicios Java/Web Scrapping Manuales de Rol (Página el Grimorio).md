@@ -2,8 +2,7 @@
 
 ## El programa mostrara en consola los manuales encontrados con sus enlaces de descarga (Títulos + href).
 
-### Recordar que para hacer uso de Jsoup, tenemos que integrar la librería previamente en nuestro proyecto, ya sea a través del 
-### Build Path como añadiendo la dependencia si trabajamos con Maven.
+### Recordar que para hacer uso de Jsoup, tenemos que integrar la librería previamente en nuestro proyecto, ya sea a través del Build Path como añadiendo la dependencia si trabajamos con Maven.
 
 ``` java
 
