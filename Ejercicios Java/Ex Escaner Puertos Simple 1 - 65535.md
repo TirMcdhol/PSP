@@ -1,6 +1,6 @@
 # EJEMPLO DE ESCANER DE PUERTOS SIMPLE EN JAVA
 
-## El programa mostrara por consola el resultado de los diferentes puertos del sistema, avisando de si estan en uso o libre.
+## El programa mostrara por consola el resultado de los diferentes puertos del sistema, avisando de si estan en uso o libres.
 
 ``` java
 
