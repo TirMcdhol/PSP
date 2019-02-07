@@ -1,5 +1,10 @@
+# EJEMPLO DE WEB SCRAPPING USANDO COMO ORIGEN UNA PAGINA DE MANUALES DE ROL Y AÑADIENDO PERSISTENCIA AL ALMACENAR EN UN ARCHIVO .TXT LOS RESULTADOS DE BUSQUEDA.
 
-java '''
+## El programa mostrara en consola los manuales encontrados con sus enlaces de descarga (Títulos + href) y a la vez añadira los mismo a un archivo Manuales.txt en el escritorio. El programa implementa un filtro de busqueda con una clausula IF que nos muestra en pantalla en rojo aquellas cosas que nos interesen haciendo uso del system.err.println().
+
+### Recordar que para hacer uso de Jsoup, tenemos que integrar la librería previamente en nuestro proyecto, ya sea a través del Build Path como añadiendo la dependencia si trabajamos con Maven.
+
+``` java
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -86,4 +91,4 @@ public class WebScrappingLinksManualesRolConPersistencia {
 
 }
 
-'''
+```
