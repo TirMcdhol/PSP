@@ -4,9 +4,6 @@
 
 ``` java
 
-import java.io.IOException;
-import java.net.ServerSocket;
-
 public class EscanerDePuertosSimple {
 
 	public static void main(String[] args) {
@@ -24,6 +21,8 @@ public class EscanerDePuertosSimple {
 	        		ServerSocket server = new ServerSocket(i);
 	        		System.out.println("Puerto: "+i+" ="+server);
 	        		contadorPuertos++;
+	        		if(contadorPuertos == 65535)
+	        			server.close();
 				}
 	        }
         	catch(IOException e)
@@ -35,6 +34,7 @@ public class EscanerDePuertosSimple {
         }//fin while
 	}
 }
+
 
 
 ```
