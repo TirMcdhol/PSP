@@ -1,4 +1,4 @@
-## Ejercicios con Sockets, que permite al usuario mediante telnet, solicitarle al servidor un registro de datos sobre los objetos almacenados en el proyecto, en nuestro case los libros y secciones de una biblioteca, a través del CMD.
+## Ejercicio con Sockets que permite al usuario mediante telnet solicitarle al servidor un registro de datos sobre los objetos almacenados en el proyecto, en nuestro caso los libros y secciones de una biblioteca a través del CMD.
 
 ``` java
 
